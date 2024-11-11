@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link';
 
 const FooterComponent = () => {
   return (
@@ -31,9 +32,9 @@ const FooterComponent = () => {
           <div className="col-md-4">
             <h5 className={styles.sectionTitle}>Quick Links</h5>
             <ul className={styles.quickLinks}>
-              <li><a href="/">Home</a></li>
-              <li><a href="/courses">Course</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+            <li><Link href="/">Home</Link></li>
+<li><Link href="/courses">Course</Link></li>
+<li><Link href="/contact">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -41,10 +42,18 @@ const FooterComponent = () => {
           <div className="col-md-4">
             <h5 className={styles.sectionTitle}>Follow Us</h5>
             <div className={styles.socialMedia}>
-              <a href="#" className={styles.icon}><FaFacebookF/></a>
-              <a href="#" className={styles.icon}><FaInstagram/></a>
-              <a href="#" className={styles.icon}><FaTwitter/></a>
-              <a href="#" className={styles.icon}><FaLinkedin/></a>
+            <Link href="#" className={styles.icon}>
+  <FaFacebookF />
+</Link>
+<Link href="#" className={styles.icon}>
+  <FaInstagram />
+</Link>
+<Link href="#" className={styles.icon}>
+  <FaTwitter />
+</Link>
+<Link href="#" className={styles.icon}>
+  <FaLinkedin />
+</Link>
 
             </div>
           </div>
@@ -56,8 +65,12 @@ const FooterComponent = () => {
               Copyrights ©2024 Greens Technologys
             </p>
             <ul className={styles.footerLinks}>
-              <li><a href="/terms">Terms of Use</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
+            <li>
+  <Link href="/terms">Terms of Use</Link>
+</li>
+<li>
+  <Link href="/privacy">Privacy Policy</Link>
+</li>
             </ul>
           </div>
         </div>
