@@ -1,0 +1,93 @@
+.container {
+  background: #16423C;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.wrapper {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.info {
+  flex: 1;
+  margin-right: 0;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .info {
+    margin-right: 20px;
+    max-width: 700px;
+    text-align: left;
+  }
+}
+
+.info h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .info h4 {
+    font-size: 30px;
+  }
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .info p {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .imageWrapper {
+    width: 300px;
+    margin-top: 0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}

@@ -1,0 +1,117 @@
+.banner {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 90px; 
+  padding-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: 144px;
+  margin-right: 144px;
+}
+
+.content {
+  max-width: 685px;
+  height: 434px;
+}
+
+.experienceTag {
+  background-color: #e0ebff;
+  color: #6A9C89;
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+  margin-right: 160px;
+}
+
+.downloadButton {
+  background-color: #16423C;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  background-color: #6A9C89;
+}
+
+.imageContainer {
+  max-width: 446px;
+  height: 430px;
+}
+
+.instructorImage {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 200px; 
+    padding-bottom: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-right: 0;
+  }
+
+  .imageContainer {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .instructorImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .downloadButton {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
